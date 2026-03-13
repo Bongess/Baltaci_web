@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Střední škola Baltaci</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Střední škola Baltaci</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#home">Úvod</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">O škole</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fields">Obory</a></li>
+        <li class="nav-item"><a class="nav-link" href="#news">Aktuality</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section id="home" class="hero-section">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-lg-8 hero">
+        <h1 class="display-4 mb-3">Střední škola Baltaci</h1>
+        <p class="lead mb-4">Moderní vzdělávání pro budoucnost.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#fields" class="btn btn-primary">Studijní obory</a>
+          <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#openDayModal">
+            Den otevřených dveří
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="section">
+  <div class="container about-clean">
+    <h2 class="text-center mb-3">O škole</h2>
+    <p class="text-center text-muted mb-5">
+      Střední škola Baltaci je moderní škola zaměřená na kvalitní vzdělávání,
+      podporu talentů a praktickou přípravu studentů na budoucí profesní život.
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="accordion custom-accordion mb-4" id="aboutAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#values">
+                Naše hodnoty
+              </button>
+            </h2>
+            <div id="values" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                • Individuální přístup ke studentům<br>
+                • Podpora talentů a kreativity<br>
+                • Moderní výuka propojená s praxí<br>
+                • Přátelské a bezpečné prostředí
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#history">
+                Historie školy
+              </button>
+            </h2>
+            <div id="history" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Škola byla založena s cílem nabídnout moderní vzdělání
+                reagující na potřeby trhu práce. Neustále rozvíjíme nové obory,
+                technologie a spolupráci s firmami.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#partners">
+                Spolupráce s firmami
+              </button>
+            </h2>
+            <div id="partners" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Spolupracujeme s lokálními i nadnárodními firmami, kde studenti
+                absolvují odbornou praxi a získávají reálné pracovní zkušenosti.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Progress bary -->
+        <div class="results-box">
+          <h5 class="mb-3 text-center">Naše výsledky</h5>
+
+          <div class="result-item">
+            <small>Úspěšnost u maturit</small>
+            <div class="progress">
+              <div class="progress-bar" style="width: 72%">72 %</div>
+            </div>
+          </div>
+
+          <div class="result-item">
+            <small>Uplatnění absolventů</small>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%">85 %</div>
+            </div>
+          </div>
+
+          <div class="result-item">
+            <small>Spokojenost studentů</small>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%">90 %</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FIELDS -->
+<section id="fields" class="section">
+  <div class="container">
+    <h2>Studijní obory</h2>
+
+    <div class="row g-4 justify-content-center align-items-stretch">
+
+      <!-- Obor 1 -->
+      <div class="col-md-4 d-flex">
+        <div class="card w-100 p-4 text-center">
+          <h5>Informační technologie</h5>
+          <p>Zaměření na programování a moderní technologie.</p>
+          <button class="btn btn-primary mt-auto" data-bs-toggle="collapse" data-bs-target="#field1">
+            Více informací
+          </button>
+
+          <div class="collapse mt-3" id="field1">
+            <div class="card card-body text-start">
+              <ul class="mb-0">
+                <li>Délka studia: 4 roky</li>
+                <li>Zakončení: maturitní zkouška</li>
+                <li>Praxe ve firmách</li>
+                <li>Možnost pokračovat na VŠ</li>
+                <li>Školné: 28 000 Kč</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obor 2 -->
+      <div class="col-md-4 d-flex">
+        <div class="card w-100 p-4 text-center">
+          <h5>Lyceum 2.0</h5>
+          <p>Most mezi teorií a praxí.</p>
+          <button class="btn btn-primary mt-auto" data-bs-toggle="collapse" data-bs-target="#field2">
+            Více informací
+          </button>
+
+          <div class="collapse mt-3" id="field2">
+            <div class="card card-body text-start">
+              <ul class="mb-0">
+                <li>Délka studia: 4 roky</li>
+                <li>Zakončení: maturita</li>
+                <li>Praxe v podnicích</li>
+                <li>Příprava na vlastní podnikání</li>
+                <li>Školné: 35 000 Kč</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obor 3 -->
+      <div class="col-md-4 d-flex">
+        <div class="card w-100 p-4 text-center">
+          <h5>Kuchař/Číšník</h5>
+          <p>Praktická výuka vaření a obsluhy.</p>
+          <button class="btn btn-primary mt-auto" data-bs-toggle="collapse" data-bs-target="#field3">
+            Více informací
+          </button>
+
+          <div class="collapse mt-3" id="field3">
+            <div class="card card-body text-start">
+              <ul class="mb-0">
+                <li>Délka studia: 3 roky</li>
+                <li>Zakončení: výuční list</li>
+                <li>Odborná praxe v restauracích</li>
+                <li>Možnost nástavby</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+  
+  <h2>Fotogalerie školy</h2>
+  
+  <p class="text-center highlight mb-5">
+  Ukázka prostředí a života na škole
+  </p>
+  
+  <div class="row g-4 gallery">
+  
+  <div class="col-md-4">
+  <img src="images/balt_1.jpg">
+  </div>
+  
+  <div class="col-md-4">
+  <img src="images/balt_2.jpg">
+  </div>
+  
+  <div class="col-md-4">
+  <img src="images/balt_3.jpg">
+  </div>
+  
+  <div class="col-md-4">
+  <img src="images/balt_4.jpg">
+  </div>
+  
+  <div class="col-md-4">
+  <img src="images/balt_5.jpg">
+  </div>
+  
+  <div class="col-md-4">
+  <img src="images/balt_6.jpeg">
+  </div>
+  
+  </div>
+  
+  </div>
+  </section>
+
+<!-- NEWS -->
+<section id="news" class="section">
+  <div class="container">
+    <h2>Aktuality</h2>
+
+    <div class="row g-4 justify-content-center align-items-stretch">
+
+      <div class="col-md-4 d-flex">
+        <div class="card news-card w-100">
+
+          <div class="image-box">
+            <img src="images/dod_balt.jpg" alt="">
+          </div>
+
+          <div class="card-body text-center">
+            <h5>Den otevřených dveří</h5>
+            <p>Zveme vás na prohlídku školy.</p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-md-4 d-flex">
+        <div class="card news-card w-100">
+
+          <div class="image-box">
+            <img src="images/soutez_balt.jpg" alt="">
+          </div>
+
+          <div class="card-body text-center">
+            <h5>Úspěch studentů</h5>
+            <p>Naši studenti vyhráli soutěž.</p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-md-4 d-flex">
+        <div class="card news-card w-100">
+
+          <div class="image-box">
+            <img src="images/ucebna_balt.jpg" alt="">
+          </div>
+
+          <div class="card-body text-center">
+            <h5>Nové učebny</h5>
+            <p>Otevřeli jsme moderní učebny IT.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Kontakt</h2>
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <p><strong>Adresa:</strong> Dřevnická 1788, 760 01 Zlín</p>
+        <p><strong>Email:</strong> info@baltaci.cz</p>
+        <p><strong>Telefon:</strong> +420 123 456 789</p>
+
+        <form>
+          <input type="text" class="form-control mb-3" placeholder="Jméno">
+          <input type="email" class="form-control mb-3" placeholder="Email">
+          <textarea class="form-control mb-3" rows="4" placeholder="Zpráva"></textarea>
+          <button class="btn btn-primary">Odeslat</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://maps.google.com/maps?q=Dřevnická%201788,%20760%2001%20Zlín&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Střední škola Baltaci</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal fade" id="openDayModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Den otevřených dveří</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+      </div>
+      <div class="modal-body">
+        <p>Přijďte se podívat na naši školu, seznámit se s učiteli a studenty.</p>
+        <p><strong>Termín:</strong> 15. 3. 2026</p>
+        <p><strong>Čas:</strong> 10:00 - 17:00</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Zavřít</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap 5 JS (nutné pro modal!) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
